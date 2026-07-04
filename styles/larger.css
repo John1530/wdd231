@@ -2,7 +2,7 @@
    DESKTOP STYLES
    ============================ */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
 
     /* ---------------- Header ---------------- */
 
@@ -35,6 +35,7 @@
     nav a {
         padding: 1rem 2.5rem;
         font-size: 1.1rem;
+        transition: background-color .3s ease;
     }
 
     nav a:hover,
@@ -45,7 +46,9 @@
     /* ---------------- Main ---------------- */
 
     main {
-        width: min(1400px, 95%);
+        max-width: 1400px;
+        width: 95%;
+        margin: auto;
         padding: 3rem 1rem;
     }
 
@@ -65,7 +68,7 @@
 
     .about,
     .photo {
-        min-height: 420px;
+        height: 100%;
     }
 
     .about p {
@@ -74,11 +77,16 @@
     }
 
     .photo {
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     .photo img {
         width: 260px;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
     }
 
     /* ---------------- Courses ---------------- */
@@ -96,22 +104,34 @@
         font-size: 1.05rem;
     }
 
-    #course-container{
-
-        grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
-
-        gap:2rem;
+    #course-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
     }
 
     .course-card {
-        padding: 1.2rem;
-        font-size: 1.1rem;
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .course-card h3 {
+        margin-bottom: 1rem;
+    }
+
+    .course-card p {
+        margin-bottom: .8rem;
     }
 
     /* ---------------- Footer ---------------- */
 
     footer {
-        padding: 2.5rem;
+        padding: 2rem;
+    }
+
+    .social {
+        justify-content: center;
+        align-items: center;
     }
 
     .social img {
@@ -126,7 +146,8 @@
 @media only screen and (min-width: 1200px) {
 
     main {
-        width: min(1500px, 92%);
+        max-width: 1400px;
+        width: 92%;
     }
 
     .top-content {
@@ -142,6 +163,6 @@
     }
 
     .course-card {
-        padding: 1.4rem;
+        padding: 1.6rem;
     }
 }
