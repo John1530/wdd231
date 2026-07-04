@@ -1,0 +1,147 @@
+/* ============================
+   DESKTOP STYLES
+   ============================ */
+
+@media only screen and (min-width: 768px) {
+
+    /* ---------------- Header ---------------- */
+
+    header {
+        padding: 1rem 3rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    /* ---------------- Navigation ---------------- */
+
+    nav {
+        display: block !important;
+        background: var(--primary-color);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    nav a:hover,
+    nav a.active {
+        background: var(--accent-color);
+    }
+
+    /* ---------------- Main ---------------- */
+
+    main {
+        width: min(1400px, 95%);
+        padding: 3rem 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    /* ---------------- About & Photo ---------------- */
+
+    .top-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: stretch;
+    }
+
+    .about,
+    .photo {
+        min-height: 420px;
+    }
+
+    .about p {
+        font-size: 1.15rem;
+        padding: 2rem;
+    }
+
+    .photo {
+        justify-content: space-between;
+    }
+
+    .photo img {
+        width: 260px;
+    }
+
+    /* ---------------- Courses ---------------- */
+
+    .courses {
+        margin-top: 4rem;
+    }
+
+    .filter-buttons {
+        gap: 1rem;
+    }
+
+    .filter-buttons button {
+        flex: 0 0 180px;
+        font-size: 1.05rem;
+    }
+
+    #course-container{
+
+        grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+
+        gap:2rem;
+    }
+
+    .course-card {
+        padding: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    /* ---------------- Footer ---------------- */
+
+    footer {
+        padding: 2.5rem;
+    }
+
+    .social img {
+        width: 40px;
+    }
+}
+
+/* ============================
+   LARGE DESKTOPS (1200px+)
+   ============================ */
+
+@media only screen and (min-width: 1200px) {
+
+    main {
+        width: min(1500px, 92%);
+    }
+
+    .top-content {
+        grid-template-columns: 2.3fr 1fr;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    #course-container {
+        gap: 2rem;
+    }
+
+    .course-card {
+        padding: 1.4rem;
+    }
+}
