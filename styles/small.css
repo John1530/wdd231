@@ -184,7 +184,7 @@ h2{
     font-size:1.7rem;
 }
 
-/* ---------------- ABOUT ---------------- */
+/* ---------------- TOP CONTENT ---------------- */
 
 .top-content{
 
@@ -207,6 +207,13 @@ h2{
     box-shadow:var(--shadow);
 }
 
+.about,
+.photo,
+.courses{
+
+    margin-bottom:2rem;
+}
+
 .about h2,
 .photo h2,
 .courses h2{
@@ -226,9 +233,11 @@ h2{
 
     font-size:1.1rem;
 
-    text-align:justify;
+    text-align:left;
 
-    line-height:2;
+    line-height:1.8;
+
+    overflow-wrap:break-word;
 }
 
 /* ---------------- PHOTO ---------------- */
@@ -244,9 +253,15 @@ h2{
 
 .photo img{
 
-    width:220px;
+    width:90%;
 
-    margin:auto;
+    max-width:220px;
+
+    height:auto;
+
+    display:block;
+
+    margin:0 auto;
 
     padding:1.5rem;
 
@@ -298,9 +313,14 @@ h2{
 
     background:var(--accent-color);
 
-    color:var(--white);
-
     transform:translateY(-2px);
+}
+
+.filter-buttons button.active{
+
+    background:var(--accent-color);
+
+    color:var(--white);
 }
 
 .filter-buttons button:focus{
@@ -328,11 +348,20 @@ h2{
     box-shadow:var(--shadow);
 
     padding:1.5rem;
+
+    transition:transform .25s ease, box-shadow .25s ease;
 }
 
 .completed{
 
     border-left-color:var(--success-color);
+}
+
+.course-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 24px rgba(0,0,0,.12);
 }
 
 .course-card h3{
@@ -347,6 +376,8 @@ h2{
     margin-bottom:.8rem;
 
     line-height:1.6;
+
+    overflow-wrap:break-word;
 }
 
 .certificate{
@@ -397,7 +428,9 @@ footer{
 
     justify-content:center;
 
-    gap:1.5rem;
+    align-items:center;
+
+    gap:2rem;
 
     margin-bottom:1rem;
 }
@@ -429,4 +462,24 @@ button:focus{
     outline:3px solid var(--warning-color);
 
     outline-offset:3px;
+}
+
+/* ---------------- SMALL DEVICES ---------------- */
+
+@media (max-width:360px){
+
+    header{
+
+        padding:1rem;
+    }
+
+    .logo img{
+
+        width:45px;
+    }
+
+    .logo span{
+
+        font-size:1.4rem;
+    }
 }
