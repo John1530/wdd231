@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "Golconda Software Solutions",
+      "address": "3rd Floor, HITEC City Road, Hyderabad, TG 500081",
+      "phone": "(040) 4455-1122",
+      "website": "https://example.com/golconda-software",
+      "image": "images/members/golconda-software.svg",
+      "membership": 3,
+      "tagline": "Custom software and IT consulting for growing businesses",
+      "founded": 2014,
+      "category": "Technology"
+    },
+    {
+      "name": "Charminar Chai House",
+      "address": "12 Laad Bazaar Lane, Old City, Hyderabad, TG 500002",
+      "phone": "(040) 2323-4567",
+      "website": "https://example.com/charminar-chai",
+      "image": "images/members/charminar-chai.svg",
+      "membership": 1,
+      "tagline": "Traditional Irani chai and Osmania biscuits since 1998",
+      "founded": 1998,
+      "category": "Food & Beverage"
+    },
+    {
+      "name": "Deccan Pearls & Jewels",
+      "address": "45 Pearl Market Street, Begum Bazaar, Hyderabad, TG 500012",
+      "phone": "(040) 2765-8899",
+      "website": "https://example.com/deccan-pearls",
+      "image": "images/members/deccan-pearls.svg",
+      "membership": 2,
+      "tagline": "Fine pearl jewelry crafted by local artisans",
+      "founded": 2005,
+      "category": "Retail"
+    },
+    {
+      "name": "Nizam's Biryani Junction",
+      "address": "88 Tank Bund Road, Hyderabad, TG 500080",
+      "phone": "(040) 6677-3344",
+      "website": "https://example.com/nizams-biryani",
+      "image": "images/members/nizams-biryani.svg",
+      "membership": 3,
+      "tagline": "Award-winning Hyderabadi biryani, dine-in and catering",
+      "founded": 2010,
+      "category": "Food & Beverage"
+    },
+    {
+      "name": "HITEC Robotics Labs",
+      "address": "Building 4, Cyberabad Tech Park, Hyderabad, TG 500032",
+      "phone": "(040) 7788-9900",
+      "website": "https://example.com/hitec-robotics",
+      "image": "images/members/hitec-robotics.svg",
+      "membership": 3,
+      "tagline": "Robotics and automation for manufacturing partners",
+      "founded": 2018,
+      "category": "Technology"
+    },
+    {
+      "name": "Old City Handicrafts Co-op",
+      "address": "22 Charminar Bazaar, Hyderabad, TG 500002",
+      "phone": "(040) 2211-5566",
+      "website": "https://example.com/old-city-handicrafts",
+      "image": "images/members/old-city-handicrafts.svg",
+      "membership": 1,
+      "tagline": "A cooperative of local artisans making Bidriware and lacquer bangles",
+      "founded": 1985,
+      "category": "Retail"
+    },
+    {
+      "name": "Hussain Sagar Eco Tours",
+      "address": "5 Necklace Road, Hyderabad, TG 500003",
+      "phone": "(040) 3344-2200",
+      "website": "https://example.com/hussain-sagar-tours",
+      "image": "images/members/hussain-sagar-tours.svg",
+      "membership": 2,
+      "tagline": "Guided boat tours and heritage walks around the lake",
+      "founded": 2016,
+      "category": "Tourism"
+    }
+  ]
+}
