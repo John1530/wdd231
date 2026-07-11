@@ -64,6 +64,7 @@ img { display: block; }
 .site-header {
   background: var(--charcoal);
   color: var(--paper);
+  transition: background .3s ease, transform .3s ease;
   padding: 0.75rem 1rem;
   position: sticky;
   top: 0;
@@ -105,6 +106,7 @@ img { display: block; }
   font-family: var(--font-display);
   font-size: 1.15rem;
   color: var(--paper);
+  transition: background .3s ease, transform .3s ease;
   white-space: nowrap;
 }
 
@@ -165,6 +167,7 @@ img { display: block; }
   display: block;
   padding: 0.75rem 0.25rem;
   color: var(--paper);
+  transition: background .3s ease, transform .3s ease;
   border-bottom: 1px solid rgba(243, 239, 230, 0.1);
   text-decoration: none;
 }
@@ -178,6 +181,7 @@ img { display: block; }
 .page-banner {
   background: linear-gradient(180deg, var(--charcoal) 0%, var(--charcoal-soft) 100%);
   color: var(--paper);
+  transition: background .3s ease, transform .3s ease;
   padding: 2.5rem 1rem 3rem;
   position: relative;
   overflow: hidden;
@@ -200,7 +204,8 @@ img { display: block; }
   margin: 0 auto;
 }
 
-.page-banner h1 { color: var(--paper); font-size: 1.9rem; }
+.page-banner h1 { color: var(--paper);
+  transition: background .3s ease, transform .3s ease; font-size: 1.9rem; }
 .page-banner p { color: var(--silver); max-width: 46ch; }
 
 /* ---------- main / directory ---------- */
@@ -248,6 +253,7 @@ main {
 .view-toggle button[aria-pressed="true"] {
   background: var(--teal);
   color: var(--paper);
+  transition: background .3s ease, transform .3s ease;
 }
 
 /* member cards */
@@ -269,6 +275,10 @@ main {
   display: flex;
   flex-direction: column;
   box-shadow: 0 1px 3px rgba(27, 29, 31, 0.08);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
 }
 
 .member-card__image-wrap {
@@ -310,6 +320,7 @@ main {
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
   color: var(--paper);
+  transition: background .3s ease, transform .3s ease;
 }
 
 .badge--1 { background: var(--teal); }
@@ -362,6 +373,7 @@ main {
 .site-footer {
   background: var(--charcoal);
   color: var(--paper);
+  transition: background .3s ease, transform .3s ease;
   padding: 2rem 1rem 1.5rem;
 }
 
@@ -390,12 +402,18 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
   border: 1px solid var(--silver);
   border-radius: 50%;
   margin-right: 0.5rem;
   color: var(--paper);
+  transition: background .3s ease, transform .3s ease;
+}
+
+.site-footer__social a:hover {
+  background: var(--gold);
+  transform: translateY(-3px);
 }
 
 .site-footer__meta {
@@ -442,55 +460,21 @@ main {
 ========================================== */
 
 .site-footer__social {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
 }
 
 .site-footer__social div,
-.site-footer__social-links {
-    display: flex;
-    gap: 0.75rem;
-}
+.site-footer__social-links{display:flex;gap:.75rem;}
 
-.site-footer__social a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    border: 1px solid var(--silver);
-    border-radius: 50%;
-    transition: background .3s ease,
-                transform .3s ease;
-}
-
-.site-footer__social a:hover {
-    background: var(--gold);
-    transform: translateY(-3px);
-}
-
-.site-footer__social img {
-    width: 22px;
-    height: 22px;
-}
+.site-footer__social img{width:22px;height:22px;}
 
 /* ==========================================
    MEMBER CARD ANIMATION
 ========================================== */
 
-.member-card {
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
-}
 
-.member-card:hover {
-    transform: translateY(-6px);
-
-    box-shadow:
-        0 8px 20px rgba(0,0,0,.15);
-}
 
 /* ==========================================
    LOADING TEXT
