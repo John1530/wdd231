@@ -13,7 +13,7 @@
   --teal: #1f6f6b;
   --teal-dark: #164f4c;
   --maroon: #8c3b32;
-  --silver: #9aa0a6;
+  --silver: #6b7280;
   --text-main: #232323;
   --text-muted: #5b5b5b;
   --border: #e2dccb;
@@ -253,6 +253,7 @@ main {
 /* member cards */
 #member-list {
   display: grid;
+  min-height: 900px;
   grid-template-columns: 1fr;
   gap: 1.1rem;
 }
