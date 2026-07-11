@@ -1,18 +1,18 @@
-// Current Year
-document.getElementById("current-year").textContent = new Date().getFullYear();
+/* Hyderabad Chamber of Commerce — shared across all pages */
 
-// Last Modified
-document.getElementById("last-modified").textContent = document.lastModified;
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.querySelector("#nav-toggle");
+  const primaryNav = document.querySelector("#primary-nav");
 
-// Mobile Navigation
-const navToggle = document.getElementById("nav-toggle");
-const primaryNav = document.getElementById("primary-nav");
-
-if (navToggle && primaryNav) {
+  if (navToggle && primaryNav) {
     navToggle.addEventListener("click", () => {
-        const isOpen = navToggle.getAttribute("aria-expanded") === "true";
-
-        navToggle.setAttribute("aria-expanded", !isOpen);
-        primaryNav.classList.toggle("is-open");
+      const isOpen = primaryNav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
     });
-}
+  }
+
+  const lastModified = document.querySelector("#last-modified");
+  if (lastModified) {
+    lastModified.textContent = document.lastModified;
+  }
+});
