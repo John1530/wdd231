@@ -502,13 +502,3 @@ main {
     color: var(--text-muted);
     font-style: italic;
 }
-
-/* ==== Improvements ==== */
-.hero{text-align:center;padding:3rem 1rem}
-.hero__inner{max-width:800px;margin:0 auto}
-#member-list{min-height:900px}
-.member-card__image-wrap{width:140px;height:140px;flex-shrink:0}
-.site-footer a{color:var(--paper)}
-.site-footer a:hover{color:var(--gold);text-decoration:none}
-.site-footer__social img{width:22px;height:22px;display:block}
-.loading{text-align:center;padding:2rem;color:var(--text-muted);font-style:italic}
