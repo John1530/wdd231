@@ -10,6 +10,7 @@
 
   .primary-nav {
     position: static;
+    inset: auto;
     max-height: none;
     overflow: visible;
     background: transparent;
@@ -36,6 +37,7 @@
 
   #member-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 650px;
   }
 
   #member-list.view-list {
@@ -55,5 +57,6 @@
 
   #member-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    min-height: 500px;
   }
 }

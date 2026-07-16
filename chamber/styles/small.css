@@ -11,7 +11,7 @@
   --background: #f3f4f6;
   --surface: #ffffff;
   --text: #111827;
-  --text-light: #4b5563;
+  --text-light: #374151;
   --border: #d1d5db;
   --success: #166534;
   --warning: #b45309;
@@ -131,8 +131,8 @@ button:focus-visible {
 }
 
 .brand__mark {
-  flex: 0 0 42px;
-  height: 42px;
+  width:42px;
+  height:42px;
 }
 
 .brand__text {
@@ -333,6 +333,7 @@ main > h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  min-height: 900px;
 }
 
 .member-card {
