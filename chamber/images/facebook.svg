@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.87.25-1.46 1.5-1.46H17V4.96c-.37-.05-1.65-.16-3.13-.16-3.1 0-5.22 1.89-5.22 5.37V11H6v3h2.65v8h4.85z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-labelledby="title">
+  <title>Facebook</title>
+  <circle cx="12" cy="12" r="12" fill="#1877F2"/>
+  <path fill="#fff" d="M13.7 21v-7h2.35l.35-2.73h-2.7V9.53c0-.79.22-1.33 1.35-1.33h1.44V5.76c-.25-.03-1.1-.11-2.09-.11-2.07 0-3.49 1.26-3.49 3.58v2.04H8.57V14h2.34v7h2.79z"/>
+</svg>

@@ -1,37 +1,45 @@
 /* =========================================================
-   Hyderabad Chamber of Commerce — larger viewport enhancements
+   Hyderabad Chamber of Commerce
+   Larger viewport stylesheet
    ========================================================= */
-@media (min-width: 640px) {
-  .site-header__inner { padding: 0 0.25rem; }
 
-  .nav-toggle { display: none; }
+@media (min-width: 640px) {
+  .site-header__inner {
+    padding: 0 0.25rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
 
   .primary-nav {
     position: static;
-    background: transparent;
     max-height: none;
     overflow: visible;
+    background: transparent;
   }
 
   .primary-nav ul {
     flex-direction: row;
-    padding: 0;
     gap: 1.75rem;
+    padding: 0;
   }
 
   .primary-nav a {
-    border-bottom: 2px solid transparent;
     padding: 0.4rem 0.1rem;
+    border-bottom: 2px solid transparent;
   }
 
   .primary-nav a[aria-current="page"] {
     border-bottom-color: var(--gold);
   }
 
-  .page-banner h1 { font-size: 2.4rem; }
+  .page-banner h1 {
+    font-size: 2.4rem;
+  }
 
   #member-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   #member-list.view-list {
@@ -45,13 +53,15 @@
 }
 
 @media (min-width: 900px) {
+  .page-banner {
+    padding: 3.5rem 1rem 4rem;
+  }
+
   #member-list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   #member-list.view-list {
     grid-template-columns: 1fr;
   }
-
-  .page-banner { padding: 3.5rem 1rem 4rem; }
 }

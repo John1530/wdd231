@@ -1,157 +1,164 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Hyderabad Chamber of Commerce | Member Directory</title>
-<meta content="Browse businesses, organizations, and community partners in the Hyderabad Chamber of Commerce member directory." name="description"/>
-<meta content="John Sathya Arava" name="author"/>
-<!-- Open Graph -->
-<meta content="Hyderabad Chamber of Commerce — Member Directory" property="og:title"/>
-<meta content="Browse member businesses of the Hyderabad Chamber of Commerce, from Old City artisans to HITEC City tech firms." property="og:description"/>
-<meta content="https://john1530.github.io/wdd231/chamber/images/social-share.png" property="og:image"/>
-<meta content="https://john1530.github.io/wdd231/chamber/directory.html" property="og:url"/>
-<meta content="website" property="og:type"/>
-<!-- Favicon -->
-<link href="images/favicon.svg" rel="icon" type="image/svg+xml"/>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
-<!-- CSS -->
-<link href="styles/normalize.css" rel="stylesheet"/>
-<link href="styles/small.css" rel="stylesheet"/>
-<link href="styles/larger.css" rel="stylesheet"/>
-<!-- JavaScript -->
-<script defer="" src="scripts/common.js"></script>
-<script defer="" src="scripts/directory.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyderabad Chamber of Commerce | Member Directory</title>
+  <meta name="description" content="Browse businesses, organizations, and community partners in the Hyderabad Chamber of Commerce member directory."/>
+  <meta name="author" content="John Sathya Arava">
+
+  <meta name="og:title" content="Hyderabad Chamber of Commerce — Member Directory">
+  <meta name="og:description" content="Browse member businesses of the Hyderabad Chamber of Commerce, from Old City artisans to HITEC City tech firms.">
+  <meta name="og:image" content="https://john1530.github.io/wdd231/chamber/images/social-share.png">
+  <meta name="og:url" content="https://john1530.github.io/wdd231/chamber/directory.html">
+  <meta name="og:type" content="website"/>
+
+  <link href="images/favicon.svg" rel="icon" type="image/svg+xml">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+  <link href="styles/small.css" rel="stylesheet">
+  <link href="styles/larger.css" rel="stylesheet">
+
+  <script defer="" src="scripts/common.js"></script>
+  <script defer="" src="scripts/directory.js"></script>
 </head>
+
 <body>
 <!-- Header -->
-<header class="site-header">
-<div class="site-header__inner">
-<a class="brand" href="index.html">
-<span aria-hidden="true" class="brand__mark">
-<svg viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#1B1D1F" height="64" rx="10" width="64"></rect>
-<path d="M16 48 V28 A16 16 0 0 1 48 28 V48" fill="none" stroke="#C89B3C" stroke-width="4"></path>
-<circle cx="32" cy="20" fill="#C89B3C" r="3"></circle>
-</svg>
-</span>
-<span class="brand__text">
-<span class="brand__name">
-            Hyderabad Chamber
-          </span>
-<span class="brand__tag">
-            of Commerce
-          </span>
-</span>
-</a>
-<button aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu" class="nav-toggle" id="nav-toggle">
-<span></span>
-<span></span>
-<span></span>
-</button>
-<nav class="primary-nav" id="primary-nav">
-<ul>
-<li>
-<a href="#">Home</a>
-</li>
-<li>
-<a aria-current="page" href="directory.html">Directory</a>
-</li>
-<li>
-<a href="#">Join</a>
-</li>
-<li>
-<a href="#">Discover</a>
-</li>
-</ul>
-</nav>
-</div>
-</header>
-<!-- Banner -->
-<section class="page-banner">
-<div class="page-banner__inner">
-
-<p>
-        From Old City artisans to HITEC City tech firms — meet the businesses powering the City of Pearls.
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Hyderabad Chamber of Commerce Home">
+        <span aria-hidden="true" class="brand__mark">
+          <svg viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <rect fill="#1B1D1F" height="64" rx="10" width="64"></rect>
+            <path d="M16 48 V28 A16 16 0 0 1 48 28 V48" fill="none" stroke="#C89B3C" stroke-width="4"></path>
+            <circle cx="32" cy="20" fill="#C89B3C" r="3"></circle>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Hyderabad Chamber</span>
+          <span class="brand__tag">of Commerce</span>
+        </span>
+      </a>
+      <button aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu" class="nav-toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Home">Home</a>
+          </li>
+          <li>
+            <a aria-current="page" href="directory.html" aria-label="Directory">Directory</a>
+          </li>
+          <li>
+            <a href="join.html" aria-label="Join">Join</a>
+          </li>
+          <li>
+            <a href="discover.html" aria-label="Discover">Discover</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Banner -->
+  <section class="page-banner">
+    <div class="page-banner__inner">
+      <h1 id="page-title">Member Directory</h1>
+      <p>
+        From Old City artisans to HITEC City tech firms, 
+        meet the businesses powering the City of Pearls.
       </p>
-</div>
-</section>
-<!-- Hero -->
-<section class="hero">
-<div class="hero__inner">
-<h2>Connecting Businesses Across Hyderabad</h2>
-<p>
+    </div>
+  </section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__inner">
+      <h2>Connecting Businesses Across Hyderabad</h2>
+      <p>
         Supporting innovation, entrepreneurship,
         and economic growth throughout the Hyderabad region.
       </p>
-</div>
-</section>
-<!-- Main -->
-<main><h1>Member Directory</h1>
-<div class="directory-controls">
-<p aria-live="polite" class="directory-controls__count" id="member-count">
+    </div>
+  </section>
+  <!-- Main -->
+  <main>
+    <div class="directory-controls">
+      <p aria-live="polite" class="directory-controls__count" id="member-count">
 
         Loading members...
 
       </p>
-<div aria-label="Choose directory view" class="view-toggle" role="group">
-<button aria-pressed="true" id="view-grid" type="button">
+      <div aria-label="Choose directory view" class="view-toggle" role="group">
+        <button aria-pressed="true" id="view-grid" type="button">
 
           Grid
 
         </button>
-<button aria-pressed="false" id="view-list" type="button">
+        <button aria-pressed="false" id="view-list" type="button">
 
           List
 
         </button>
-</div>
-</div>
-<ul aria-live="polite" class="view-grid" id="member-list">
-<li class="loading">
+      </div>
+    </div>
+    <ul aria-live="polite" class="view-grid" id="member-list">
+      <li class="loading">
 
         Loading member directory...
 
       </li>
-</ul>
-</main>
-<!-- Footer -->
-<footer class="site-footer">
-<div class="site-footer__inner">
-<div>
-<h2>Contact Information</h2>
-<address>
+    </ul>
+  </main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <section>
+        <h2>Contact Information</h2>
+        <address>
 
           Hyderabad Chamber of Commerce<br/>
 
           14 Tank Bund Road<br/>
 
           Hyderabad, Telangana 500080<br/>
-<a href="tel:+914023450001">(040) 2345-0001</a><br/>
-<a href="mailto:info@hyderabadchamber.example">
+          <a href="tel:+914023450001" aria-label="Call Hyderabad Chamber of Commerce">
+            (040) 2345-0001
+          </a><br/>
+          <a href="mailto:info@hyderabadchamber.example" aria-label="Email Hyderabad Chamber of Commerce">
             info@hyderabadchamber.example
           </a>
-</address>
-</div>
-<div class="site-footer__social">
-<h2>Follow Us</h2>
-<a aria-label="LinkedIn" href="https://www.linkedin.com/in/john-sathya-arava-4390892a7/" rel="noopener noreferrer" target="_blank">
-<img alt="LinkedIn" height="40" src="images/linkedin.svg" width="40"/>
-</a>
-<a aria-label="Facebook" href="https://www.facebook.com/john.s.arava" rel="noopener noreferrer" target="_blank">
-<img alt="Facebook" height="40" src="images/facebook.svg" width="40"/>
-</a>
-<a aria-label="Instagram" href="https://www.instagram.com/silentmomentum1530/" rel="noopener noreferrer" target="_blank">
-<img alt="Instagram" height="40" src="images/instagram.svg" width="40"/>
-</a>
-</div>
-<div>
-<h2>Site Information</h2>
-<p class="site-footer__meta">
+        </address>
+      </section>
+      <section class="site-footer_social">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/john-sathya-arava-4390892a7/" rel="noopener noreferrer" target="_blank">
+              <img alt="LinkedIn" height="40" src="images/linkedin.svg" width="40"/>
+            </a>
+          </li>
+          <li>
+            <a aria-label="Facebook" href="https://www.facebook.com/john.s.arava" rel="noopener noreferrer" target="_blank">
+              <img alt="Facebook" height="40" src="images/facebook.svg" width="40"/>
+            </a>
+          </li>
+          <li>
+            <a aria-label="Instagram" href="https://www.instagram.com/silentmomentum1530/" rel="noopener noreferrer" target="_blank">
+              <img alt="Instagram" height="40" src="images/instagram.svg" width="40"/>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Site Information</h2>
+        <p class="site-footer__meta">
 
           ©
           <span id="current-year"></span>
@@ -167,9 +174,9 @@
           Last Modified:
 
           <span id="last-modified"></span>
-</p>
-</div>
-</div>
-</footer>
+        </p>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>

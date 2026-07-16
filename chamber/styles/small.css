@@ -1,48 +1,102 @@
-/* Hyderabad Chamber of Commerce — mobile-first styles */
+/* =========================================================
+   Hyderabad Chamber of Commerce
+   Mobile-first stylesheet
+   ========================================================= */
+
+/* ---------- Variables ---------- */
 
 :root {
-  --primary-color: #1f2937;
-  --secondary-color: #374151;
-  --accent-color: #1e3a8a;
-  --background-color: #f3f4f6;
-  --card-color: #ffffff;
-  --text-color: #111827;
+  --primary: #1f2937;
+  --secondary: #374151;
+  --accent: #1e3a8a;
+  --gold: #c89b3c;
+
+  --background: #f3f4f6;
+  --surface: #ffffff;
+
+  --text: #111827;
   --text-light: #4b5563;
-  --border-color: #d1d5db;
-  --success-color: #166534;
-  --warning-color: #b45309;
+  --border: #d1d5db;
+
+  --success: #166534;
+  --warning: #b45309;
+
   --white: #ffffff;
-  --black: #000000;
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: "JetBrains Mono", "Courier New", monospace;
-  --content-max: 1100px;
+
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --max-width: 1100px;
   --radius: 12px;
   --shadow: 0 6px 18px rgb(0 0 0 / 8%);
+}
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
-  font-family: var(--font-body);
-  background: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.5;
 }
 
-h1, h2, h3 {
-  margin: 0 0 0.5em;
-  font-family: var(--font-display);
-  color: var(--primary-color);
-  line-height: 1.15;
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
 }
 
 a {
-  color: var(--accent-color);
+  color: inherit;
   text-decoration: none;
+}
+
+/* ---------- Base ---------- */
+
+body {
+  min-width: 320px;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary);
+  font-family: var(--font-heading);
+  line-height: 1.15;
 }
 
 a:hover,
@@ -50,37 +104,21 @@ a:focus {
   text-decoration: underline;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-button:focus-visible,
-a:focus-visible {
-  outline: 3px solid var(--warning-color);
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--warning);
   outline-offset: 3px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
-}
+/* ---------- Header ---------- */
 
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 100;
   padding: 0.75rem 1rem;
-  background: var(--primary-color);
-  color: var(--white);
-  box-shadow: 0 2px 10px rgb(0 0 0 / 12%);
+  background: var(--primary);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 14%);
 }
 
 .site-header__inner {
@@ -88,7 +126,7 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  max-width: var(--content-max);
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -99,8 +137,12 @@ a:focus-visible {
   min-width: 0;
 }
 
+.brand:hover {
+  text-decoration: none;
+}
+
 .brand__mark {
-  flex: 0 0 auto;
+  flex: 0 0 42px;
   width: 42px;
   height: 42px;
 }
@@ -119,17 +161,19 @@ a:focus-visible {
 
 .brand__name {
   color: var(--white);
-  font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
   white-space: nowrap;
 }
 
 .brand__tag {
   color: #dbeafe;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+/* ---------- Mobile navigation ---------- */
 
 .nav-toggle {
   display: flex;
@@ -142,18 +186,16 @@ a:focus-visible {
   border: 1px solid rgb(255 255 255 / 25%);
   border-radius: 8px;
   background: transparent;
-  cursor: pointer;
 }
 
 .nav-toggle span {
-  display: block;
   width: 100%;
   height: 2px;
   background: var(--white);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+.nav-toggle[aria-expanded="true"] span:first-child {
   transform: translateY(7px) rotate(45deg);
 }
 
@@ -161,7 +203,7 @@ a:focus-visible {
   opacity: 0;
 }
 
-.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+.nav-toggle[aria-expanded="true"] span:last-child {
   transform: translateY(-7px) rotate(-45deg);
 }
 
@@ -172,20 +214,18 @@ a:focus-visible {
   left: 0;
   max-height: 0;
   overflow: hidden;
-  background: var(--secondary-color);
+  background: var(--secondary);
   transition: max-height 0.25s ease;
 }
 
 .primary-nav.is-open {
-  max-height: 300px;
+  max-height: 320px;
 }
 
 .primary-nav ul {
   display: flex;
   flex-direction: column;
-  margin: 0;
   padding: 0.5rem 1rem 1rem;
-  list-style: none;
 }
 
 .primary-nav a {
@@ -193,42 +233,48 @@ a:focus-visible {
   padding: 0.8rem 0.25rem;
   border-bottom: 1px solid rgb(255 255 255 / 14%);
   color: var(--white);
-  text-decoration: none;
 }
 
 .primary-nav a:hover,
+.primary-nav a:focus,
 .primary-nav a[aria-current="page"] {
   color: #bfdbfe;
+  text-decoration: none;
 }
+
+/* ---------- Page banner ---------- */
 
 .page-banner {
   padding: 2.5rem 1rem;
-  background: var(--secondary-color);
+  background: var(--secondary);
   color: var(--white);
 }
 
 .page-banner__inner {
-  max-width: var(--content-max);
+  max-width: var(--max-width);
   margin: 0 auto;
   text-align: center;
 }
 
 .page-banner h1 {
+  margin-bottom: 0.75rem;
   color: var(--white);
   font-size: 2rem;
 }
 
 .page-banner p {
-  max-width: 52ch;
+  max-width: 55ch;
   margin: 0 auto;
   color: #e5e7eb;
 }
 
+/* ---------- Hero ---------- */
+
 .hero {
   padding: 2.5rem 1rem;
-  background: var(--card-color);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
   text-align: center;
-  border-bottom: 1px solid var(--border-color);
 }
 
 .hero__inner {
@@ -236,20 +282,22 @@ a:focus-visible {
   margin: 0 auto;
 }
 
-.hero__inner h2 {
+.hero h2 {
   margin-bottom: 0.75rem;
   font-size: 1.8rem;
 }
 
-.hero__inner p {
+.hero p {
   max-width: 60ch;
   margin: 0 auto;
   color: var(--text-light);
   line-height: 1.7;
 }
 
+/* ---------- Main ---------- */
+
 main {
-  max-width: var(--content-max);
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 1.5rem 1rem 3rem;
 }
@@ -264,62 +312,55 @@ main {
 }
 
 .directory-controls__count {
-  margin: 0;
   color: var(--text-light);
   font-family: var(--font-mono);
   font-size: 0.84rem;
 }
 
+/* ---------- View buttons ---------- */
+
 .view-toggle {
   display: inline-flex;
   overflow: hidden;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border);
   border-radius: 8px;
-  background: var(--card-color);
+  background: var(--surface);
 }
 
 .view-toggle button {
   min-width: 74px;
   padding: 0.55rem 0.9rem;
-  border: 0;
   background: transparent;
   color: var(--text-light);
-  font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .view-toggle button + button {
-  border-left: 1px solid var(--border-color);
+  border-left: 1px solid var(--border);
 }
 
 .view-toggle button[aria-pressed="true"] {
-  background: var(--accent-color);
+  background: var(--accent);
   color: var(--white);
 }
+
+/* ---------- Member directory ---------- */
 
 #member-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  min-height: 900px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#member-list.view-list {
-  grid-template-columns: 1fr;
+  min-height: 200px;
 }
 
 .member-card {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--card-color);
+  background: var(--surface);
   box-shadow: var(--shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -330,19 +371,19 @@ main {
 }
 
 .member-card__image-wrap {
+  flex: 0 0 auto;
   width: 140px;
   height: 140px;
   margin: 1rem auto 0;
   overflow: hidden;
-  border: 2px solid var(--accent-color);
-  border-radius: 12px;
-  background: var(--background-color);
-  flex-shrink: 0;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--background);
 }
 
 .member-card__image-wrap img {
-  width: 140px;
-  height: 140px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -355,34 +396,9 @@ main {
 }
 
 .member-card__name {
-  margin: 0;
-  color: var(--primary-color);
-  font-family: var(--font-display);
+  color: var(--primary);
+  font-family: var(--font-heading);
   font-size: 1.2rem;
-}
-
-.badge {
-  display: inline-block;
-  align-self: center;
-  padding: 0.25rem 0.65rem;
-  border-radius: 999px;
-  color: var(--white);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.badge--1 {
-  background: var(--success-color);
-}
-
-.badge--2 {
-  background: var(--secondary-color);
-}
-
-.badge--3 {
-  background: var(--accent-color);
 }
 
 .member-card__tagline,
@@ -402,9 +418,37 @@ main {
 
 .member-card__link {
   margin-top: 0.45rem;
-  color: var(--accent-color);
+  color: var(--accent);
   font-weight: 700;
 }
+
+/* ---------- Membership badges ---------- */
+
+.badge {
+  display: inline-block;
+  align-self: center;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  color: var(--white);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.badge--1 {
+  background: var(--success);
+}
+
+.badge--2 {
+  background: var(--secondary);
+}
+
+.badge--3 {
+  background: var(--accent);
+}
+
+/* ---------- List view ---------- */
 
 #member-list.view-list .member-card {
   flex-direction: row;
@@ -413,15 +457,7 @@ main {
 }
 
 #member-list.view-list .member-card__image-wrap {
-  width: 72px;
-  height: 72px;
-  margin: 1rem;
-  flex: 0 0 auto;
-}
-
-#member-list.view-list .member-card__image-wrap img {
-  width: 72px;
-  height: 72px;
+  display: none;
 }
 
 #member-list.view-list .member-card__body {
@@ -434,6 +470,8 @@ main {
   align-self: flex-start;
 }
 
+/* ---------- Loading message ---------- */
+
 .loading {
   padding: 2rem;
   color: var(--text-light);
@@ -441,20 +479,23 @@ main {
   text-align: center;
 }
 
+/* ---------- Footer ---------- */
+
 .site-footer {
   padding: 2rem 1rem 1.5rem;
-  background: var(--primary-color);
+  background: var(--primary);
   color: var(--white);
 }
 
 .site-footer__inner {
   display: grid;
   gap: 1.5rem;
-  max-width: var(--content-max);
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
 .site-footer h2 {
+  margin-bottom: 0.65rem;
   color: var(--white);
   font-size: 1rem;
   letter-spacing: 0.06em;
@@ -467,8 +508,8 @@ main {
 }
 
 .site-footer address {
-  font-style: normal;
   font-size: 0.9rem;
+  font-style: normal;
   line-height: 1.7;
 }
 
@@ -481,18 +522,19 @@ main {
   color: #bfdbfe;
 }
 
+/* ---------- Social icons ---------- */
+
 .site-footer__social {
+  display: block;
+}
+
+.social-links {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
   gap: 0.65rem;
 }
 
-.site-footer__social h2 {
-  flex-basis: 100%;
-}
-
-.site-footer__social a {
+.social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -503,12 +545,13 @@ main {
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.site-footer__social a:hover {
-  background: var(--accent-color);
+.social-links a:hover {
+  background: var(--accent);
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
-.site-footer__social img {
+.social-links img {
   width: 22px;
   height: 22px;
 }
@@ -518,7 +561,10 @@ main {
   border-top: 1px solid rgb(255 255 255 / 18%);
   font-family: var(--font-mono);
   font-size: 0.75rem;
+  line-height: 1.7;
 }
+
+/* ---------- Reduced motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -528,7 +574,7 @@ main {
   *,
   *::before,
   *::after {
-    transition: none;
-    animation: none;
+    transition: none !important;
+    animation: none !important;
   }
 }
