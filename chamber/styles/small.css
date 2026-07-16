@@ -7,7 +7,7 @@
   --primary: #1f2937;
   --secondary: #374151;
   --accent: #1e3a8a;
-  --gold: #c89b3c;
+  --gold: #8a5a00;
   --background: #f3f4f6;
   --surface: #ffffff;
   --text: #111827;
@@ -483,12 +483,19 @@ main > h1 {
 
 .home-hero__eyebrow,
 .section-heading__label {
-  color: var(--gold);
   font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.home-hero__eyebrow {
+  color: #ffd166;
+}
+
+.section-heading__label {
+  color: #744800;
 }
 
 .home-hero__heading {
@@ -517,8 +524,14 @@ main > h1 {
 }
 
 .button--primary {
-  background: var(--gold);
-  color: var(--primary);
+  background: #ffd166;
+  color: #111827;
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  background: #ffe29a;
+  color: #111827;
 }
 
 .button:hover,
