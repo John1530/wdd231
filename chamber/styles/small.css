@@ -3,36 +3,29 @@
    Mobile-first stylesheet
    ========================================================= */
 
-/* ---------- Variables ---------- */
-
 :root {
   --primary: #1f2937;
   --secondary: #374151;
   --accent: #1e3a8a;
   --gold: #c89b3c;
-
   --background: #f3f4f6;
   --surface: #ffffff;
-
   --text: #111827;
   --text-light: #4b5563;
   --border: #d1d5db;
-
   --success: #166534;
   --warning: #b45309;
-
-  --white: #ffffff;
-
+  --light-blue: #bfdbfe;
+  --soft-blue: #dbeafe;
+  --footer-text: #e5e7eb;
+  --icon-border: #9ca3af;
   --font-heading: "Fraunces", Georgia, serif;
   --font-body: "Inter", Arial, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
-
   --max-width: 1100px;
   --radius: 12px;
   --shadow: 0 6px 18px rgb(0 0 0 / 8%);
 }
-
-/* ---------- Reset ---------- */
 
 *,
 *::before,
@@ -81,10 +74,7 @@ a {
   text-decoration: none;
 }
 
-/* ---------- Base ---------- */
-
 body {
-  min-width: 320px;
   background: var(--background);
   color: var(--text);
   font-family: var(--font-body);
@@ -110,7 +100,7 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
-/* ---------- Header ---------- */
+/* Header */
 
 .site-header {
   position: sticky;
@@ -134,7 +124,6 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  min-width: 0;
 }
 
 .brand:hover {
@@ -143,37 +132,30 @@ button:focus-visible {
 
 .brand__mark {
   flex: 0 0 42px;
-  width: 42px;
   height: 42px;
-}
-
-.brand__mark svg {
-  width: 100%;
-  height: 100%;
 }
 
 .brand__text {
   display: flex;
   flex-direction: column;
-  min-width: 0;
   line-height: 1.1;
 }
 
 .brand__name {
-  color: var(--white);
+  color: var(--surface);
   font-family: var(--font-heading);
   font-size: 1.05rem;
   white-space: nowrap;
 }
 
 .brand__tag {
-  color: #dbeafe;
+  color: var(--soft-blue);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-/* ---------- Mobile navigation ---------- */
+/* Mobile navigation */
 
 .nav-toggle {
   display: flex;
@@ -191,7 +173,7 @@ button:focus-visible {
 .nav-toggle span {
   width: 100%;
   height: 2px;
-  background: var(--white);
+  background: var(--surface);
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -232,22 +214,22 @@ button:focus-visible {
   display: block;
   padding: 0.8rem 0.25rem;
   border-bottom: 1px solid rgb(255 255 255 / 14%);
-  color: var(--white);
+  color: var(--surface);
 }
 
 .primary-nav a:hover,
 .primary-nav a:focus,
 .primary-nav a[aria-current="page"] {
-  color: #bfdbfe;
+  color: var(--light-blue);
   text-decoration: none;
 }
 
-/* ---------- Page banner ---------- */
+/* Banner */
 
 .page-banner {
   padding: 2.5rem 1rem;
   background: var(--secondary);
-  color: var(--white);
+  color: var(--surface);
 }
 
 .page-banner__inner {
@@ -256,19 +238,13 @@ button:focus-visible {
   text-align: center;
 }
 
-.page-banner h1 {
-  margin-bottom: 0.75rem;
-  color: var(--white);
-  font-size: 2rem;
-}
-
 .page-banner p {
   max-width: 55ch;
   margin: 0 auto;
-  color: #e5e7eb;
+  color: var(--footer-text);
 }
 
-/* ---------- Hero ---------- */
+/* Hero */
 
 .hero {
   padding: 2.5rem 1rem;
@@ -294,12 +270,18 @@ button:focus-visible {
   line-height: 1.7;
 }
 
-/* ---------- Main ---------- */
+/* Main */
 
 main {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 1.5rem 1rem 3rem;
+}
+
+main > h1 {
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .directory-controls {
@@ -317,7 +299,7 @@ main {
   font-size: 0.84rem;
 }
 
-/* ---------- View buttons ---------- */
+/* View buttons */
 
 .view-toggle {
   display: inline-flex;
@@ -342,16 +324,15 @@ main {
 
 .view-toggle button[aria-pressed="true"] {
   background: var(--accent);
-  color: var(--white);
+  color: var(--surface);
 }
 
-/* ---------- Member directory ---------- */
+/* Member directory */
 
 #member-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  min-height: 200px;
 }
 
 .member-card {
@@ -371,7 +352,6 @@ main {
 }
 
 .member-card__image-wrap {
-  flex: 0 0 auto;
   width: 140px;
   height: 140px;
   margin: 1rem auto 0;
@@ -422,14 +402,14 @@ main {
   font-weight: 700;
 }
 
-/* ---------- Membership badges ---------- */
+/* Badges */
 
 .badge {
   display: inline-block;
   align-self: center;
   padding: 0.25rem 0.65rem;
   border-radius: 999px;
-  color: var(--white);
+  color: var(--surface);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -448,12 +428,11 @@ main {
   background: var(--accent);
 }
 
-/* ---------- List view ---------- */
+/* List view */
 
 #member-list.view-list .member-card {
   flex-direction: row;
   align-items: center;
-  gap: 0.75rem;
 }
 
 #member-list.view-list .member-card__image-wrap {
@@ -462,15 +441,14 @@ main {
 
 #member-list.view-list .member-card__body {
   align-items: flex-start;
-  padding-left: 0;
+  width: 100%;
+  padding: 1rem 1.1rem;
   text-align: left;
 }
 
 #member-list.view-list .badge {
   align-self: flex-start;
 }
-
-/* ---------- Loading message ---------- */
 
 .loading {
   padding: 2rem;
@@ -479,12 +457,12 @@ main {
   text-align: center;
 }
 
-/* ---------- Footer ---------- */
+/* Footer */
 
 .site-footer {
   padding: 2rem 1rem 1.5rem;
   background: var(--primary);
-  color: var(--white);
+  color: var(--surface);
 }
 
 .site-footer__inner {
@@ -496,7 +474,7 @@ main {
 
 .site-footer h2 {
   margin-bottom: 0.65rem;
-  color: var(--white);
+  color: var(--surface);
   font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -504,7 +482,7 @@ main {
 
 .site-footer address,
 .site-footer__meta {
-  color: #e5e7eb;
+  color: var(--footer-text);
 }
 
 .site-footer address {
@@ -514,23 +492,18 @@ main {
 }
 
 .site-footer a {
-  color: var(--white);
+  color: var(--surface);
 }
 
 .site-footer a:hover,
 .site-footer a:focus {
-  color: #bfdbfe;
+  color: var(--light-blue);
 }
 
-/* ---------- Social icons ---------- */
-
-.site-footer__social {
-  display: block;
-}
+/* Social icons */
 
 .social-links {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.65rem;
 }
 
@@ -540,7 +513,7 @@ main {
   justify-content: center;
   width: 42px;
   height: 42px;
-  border: 1px solid #9ca3af;
+  border: 1px solid var(--icon-border);
   border-radius: 50%;
   transition: background 0.2s ease, transform 0.2s ease;
 }
@@ -564,8 +537,6 @@ main {
   line-height: 1.7;
 }
 
-/* ---------- Reduced motion ---------- */
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -574,7 +545,8 @@ main {
   *,
   *::before,
   *::after {
-    transition: none !important;
-    animation: none !important;
+    transition: none;
+    animation: none;
   }
 }
+

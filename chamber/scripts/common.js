@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
       navToggle.setAttribute("aria-expanded", String(isOpen));
     });
   }
+  const currentYear = document.querySelector("#current-year");
+
+  if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
+  }
 
   const lastModified = document.querySelector("#last-modified");
   if (lastModified) {
