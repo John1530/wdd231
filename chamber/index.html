@@ -13,7 +13,7 @@
     <meta property="og:description" content="Browse the Hyderabad Chamber of Commerce directory to connect with local businesses, organizations, and community leaders.">
     <meta property="og:image" content="https://john1530.github.io/wdd231/chamber/images/social-share.png">
     <meta property="og:url" content="https://john1530.github.io/wdd231/chamber/index.html">
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website">
 
     <link href="images/favicon.svg" rel="icon" type="image/svg+xml">
 
@@ -25,11 +25,337 @@
     <link href="styles/larger.css" rel="stylesheet">
 
     <script defer="" src="scripts/common.js"></script>
-    <script defer="" src="scripts/directory.js"></script>
     <script defer="" src="scripts/index.js"></script>
-    <script defer="" src="scripts/date.js"></script>
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="Hyderabad Chamber of Commerce home">
+                <span class="brand__mark" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="10" fill="#1B1D1F"></rect>
+                        <path d="M16 48V28A16 16 0 0 1 48 28V48" fill="none" stroke="#C89B3C" stroke-width="4"></path>
+                        <circle cx="32" cy="20" r="3" fill="#C89B3C"></circle>
+                    </svg>
+                </span>
+
+                <span class="brand__text">
+                    <span class="brand__name">Hyderabad Chamber</span>
+                    <span class="brand__tag">of Commerce</span>
+                </span>
+            </a>
+
+            <button
+                class="nav-toggle"
+                id="nav-toggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-controls="primary-nav"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="primary-nav"
+                id="primary-nav"
+                aria-label="Primary navigation">
+                <ul>
+                    <li>
+                        <a href="index.html" aria-current="page">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="home-hero">
+        <img src="images/hyderabad-hero.png" alt="Hyderabad city skyline and business district" width="1600" height="700">
+
+        <div class="home-hero__overlay">
+            <div class="home-hero__content">
+                <p class="home-hero__eyebrow">
+                    Hyderabad Chamber of Commerce
+                </p>
+
+                <p class="home-hero__heading">
+                    Building Stronger Businesses and Communities
+                </p>
+
+                <p>
+                    Connect with local organizations, discover new opportunities,
+                    and help shape Hyderabad's economic future.
+                </p>
+
+                <a class="button button--primary" href="join.html">
+                Join the Chamber
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+        <h1>Hyderabad Chamber of Commerce</h1>
+
+        <!-- Calls to Action -->
+        <section class="home-actions" aria-labelledby="actions-heading">
+            <h2 id="actions-heading">Grow Your Business in Hyderabad</h2>
+
+            <div class="home-actions__grid">
+                <article class="home-action-card">
+                    <h3>Join the Chamber</h3>
+
+                    <p>
+                        Become part of a growing network of businesses, entrepreneurs,
+                        and community leaders across Hyderabad.
+                    </p>
+
+                    <a class="text-link" href="join.html">
+                        View membership options
+                    </a>
+                </article>
+
+                <article class="home-action-card">
+                    <h3>Explore Members</h3>
+
+                    <p>
+                        Discover local businesses, service providers, and organizations
+                        contributing to the city's economy.
+                    </p>
+
+                    <a class="text-link" href="directory.html">
+                        Browse the directory
+                    </a>
+                </article>
+
+                <article class="home-action-card">
+                    <h3>Discover Hyderabad</h3>
+
+                    <p>
+                        Learn about the city's commercial districts, culture,
+                        infrastructure, and business opportunities.
+                    </p>
+
+                    <a class="text-link" href="discover.html">
+                        Explore the city
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Current Events -->
+        <section class="home-section" aria-labelledby="events-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="section-heading__label">Community</p>
+                    <h2 id="events-heading">Current Events</h2>
+                </div>
+            </div>
+
+            <div class="events-grid">
+                <article class="event-card">
+                    <p class="event-card__date">
+                        22 August 2026
+                    </p>
+
+                    <h3>Hyderabad Business Networking Evening</h3>
+
+                    <p>
+                        Meet entrepreneurs, professionals, and business leaders
+                        from across the region.
+                    </p>
+
+                    <p class="event-card__location">
+                        HITEC City, Hyderabad
+                    </p>
+                </article>
+
+                <article class="event-card">
+                    <p class="event-card__date">
+                        5 September 2026
+                    </p>
+
+                    <h3>Small Business Growth Workshop</h3>
+
+                    <p>
+                        Learn practical strategies for marketing, finance,
+                        customer service, and digital growth.
+                    </p>
+
+                    <p class="event-card__location">
+                        Banjara Hills, Hyderabad
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Weather -->
+        <section class="home-section" aria-labelledby="weather-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="section-heading__label">Local Conditions</p>
+                    <h2 id="weather-heading">Hyderabad Weather</h2>
+                </div>
+            </div>
+
+            <div class="weather-card">
+                <div class="weather-card__current">
+                    <img id="weather-icon" src="images/weather-placeholder.svg" alt="Weather icon" width="90" height="90">
+
+                    <div>
+                        <p class="weather-card__temperature">
+                            <span id="current-temp">--</span>°C
+                        </p>
+
+                        <p id="weather-description">
+                            Loading current conditions...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="weather-card__details">
+                    <p>
+                        High:
+                        <strong><span id="weather-high">--</span>°C</strong>
+                    </p>
+
+                    <p>
+                        Low:
+                        <strong><span id="weather-low">--</span>°C</strong>
+                    </p>
+
+                    <p>
+                        Humidity:
+                        <strong><span id="weather-humidity">--</span>%</strong>
+                    </p>
+
+                    <p>
+                        Sunrise:
+                        <strong id="sunrise-time">--</strong>
+                    </p>
+
+                    <p>
+                        Sunset:
+                        <strong id="sunset-time">--</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="forecast-grid" id="forecast">
+                <article class="forecast-card">
+                    <h3>Tomorrow</h3>
+                    <p>Loading...</p>
+                </article>
+
+                <article class="forecast-card">
+                    <h3>Day Two</h3>
+                    <p>Loading...</p>
+                </article>
+
+                <article class="forecast-card">
+                    <h3>Day Three</h3>
+                    <p>Loading...</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Member Spotlights -->
+        <section class="home-section" aria-labelledby="spotlights-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="section-heading__label">Featured Members</p>
+                    <h2 id="spotlights-heading">Business Spotlights</h2>
+                </div>
+
+                <a class="text-link" href="directory.html">
+                    View all members
+                </a>
+            </div>
+
+            <div class="spotlight-grid" id="spotlight-list" aria-live="polite">
+                <article class="spotlight-card">
+                    <p>Loading featured businesses...</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="site-footer__inner">
+      <section>
+        <h2>Contact Information</h2>
+        <address>
+
+          Hyderabad Chamber of Commerce
+
+          14 Tank Bund Road
+
+          Hyderabad, Telangana 500080
+          <a href="tel:+914023450001" aria-label="Call Hyderabad Chamber of Commerce">
+            (040) 2345-0001
+          </a>
+          <a href="mailto:info@hyderabadchamber.example" aria-label="Email Hyderabad Chamber of Commerce">
+            info@hyderabadchamber.example
+          </a>
+        </address>
+      </section>
+      <section class="site-footer__social">
+        <h2>Follow Us</h2>
+
+        <ul class="social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/john-sathya-arava-4390892a7/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+              <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/john.s.arava" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook profile">
+              <img src="images/facebook.svg" alt="Facebook" width="40" height="40">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/silentmomentum1530/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram profile">
+              <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Site Information</h2>
+        <p class="site-footer__meta">
+
+          ©
+          <span id="current-year"></span>
+
+          Hyderabad Chamber of Commerce
+
+          John Sathya Arava • WDD 231
+
+          Last Modified:
+
+          <span id="last-modified"></span>
+        </p>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
