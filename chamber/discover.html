@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover Hyderabad | Chamber of Commerce</title>
+
+    <meta name="description" content="Discover Hyderabad's landmarks, culture, business districts, and visitor attractions while exploring opportunities across the city.">
+    <meta name="author" content="John Sathya Arava">
+
+    <meta property="og:title" content="Discover Hyderabad | Chamber of Commerce">
+    <meta property="og:description" content="Discover Hyderabad's landmarks, culture, business districts, and visitor attractions while exploring opportunities across the city.">
+    <meta property="og:image" content="https://john1530.github.io/wdd231/chamber/images/social-share.png">
+    <meta property="og:url" content="https://john1530.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <link href="images/favicon.svg" rel="icon" type="image/svg+xml">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <script defer="" src="scripts/common.js"></script>
+    <script defer="" src="scripts/discover.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="Hyderabad Chamber of Commerce home">
+                <span class="brand__mark" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="10" fill="#1B1D1F"></rect>
+                        <path d="M16 48V28A16 16 0 0 1 48 28V48" fill="none" stroke="#C89B3C" stroke-width="4"></path>
+                        <circle cx="32" cy="20" r="3" fill="#C89B3C"></circle>
+                    </svg>
+                </span>
+
+                <span class="brand__text">
+                    <span class="brand__name">Hyderabad Chamber</span>
+                    <span class="brand__tag">of Commerce</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html" aria-current="page">
+                            Discover
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="page-banner__inner">
+            <p>
+                Experience Hyderabad's heritage, innovation, commerce,
+                food, technology, and welcoming community.
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <h1>Discover Hyderabad</h1>
+
+        <div class="discover-layout">
+            <aside class="visit-message" aria-labelledby="visit-message-heading">
+                <h2 id="visit-message-heading">Welcome</h2>
+
+                <p id="visit-message">
+                    Discover what makes Hyderabad a dynamic place to live,
+                    visit, work, and grow a business.
+                </p>
+            </aside>
+
+            <sectionclass="discover-section" aria-labelledby="places-heading">
+                <h2 id="places-heading">Places and Opportunities to Explore</h2>
+
+                <div class="discover-grid">
+          
+                <article class="discover-card">
+                    <h3>Charminar</h3>
+
+                    <figure>
+                        <img src="images/charminar.webp" alt="The historic Charminar monument in Hyderabad" width="500" height="300" loading="lazy">
+                    </figure>
+
+                    <address>
+                        Charminar Road, Old City, Hyderabad
+                    </address>
+
+                    <p>
+                        Built in 1591, Charminar is Hyderabad's most recognised
+                        landmark and a centre of history, culture, markets, and tourism.
+                    </p>
+
+                    <a class="discover-card__link" href="https://en.wikipedia.org/wiki/Charminar" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </article>
+
+                <article class="discover-card">
+                    <h3>HITEC City</h3>
+
+                    <figure>
+                        <img src="images/hitech-city.webp" alt="Modern office buildings in HITEC City Hyderabad" width="500" height="300" loading="lazy">
+                    </figure>
+
+                    <address>
+                        Madhapur, Hyderabad
+                    </address>
+
+                    <p>
+                        HITEC City is a major technology and business district,
+                        supporting global companies, startups, innovation, and employment.
+                    </p>
+
+                    <a class="discover-card__link" href="https://en.wikipedia.org/wiki/HITEC_City" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </article>
+
+                <article class="discover-card">
+                    <h3>Golconda Fort</h3>
+
+                    <figure>
+                        <img src="images/golconda-fort.webp" alt="Stone walls and structures at Golconda Fort" width="500" height="300" loading="lazy">
+                    </figure>
+
+                    <address>
+                        Khair Complex, Ibrahim Bagh, Hyderabad
+                    </address>
+
+                    <p>
+                        Golconda Fort reflects the city's royal past and is known
+                        for its architecture, acoustics, history, and panoramic views.
+                    </p>
+
+                    <a class="discover-card__link" href="https://en.wikipedia.org/wiki/Golconda" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </article>
+
+                <article class="discover-card">
+                    <h3>Hussain Sagar Lake</h3>
+
+                    <figure>
+                        <img src="images/hussain-sagar.webp" alt="Hussain Sagar Lake and Buddha statue in Hyderabad" width="500" height="300" loading="lazy">
+                    </figure>
+
+                    <address>
+                        Tank Bund Road, Hyderabad
+                    </address>
+
+                    <p>
+                        This historic lake connects Hyderabad and Secunderabad
+                        and offers recreation, public spaces, tourism, and city views.
+                    </p>
+
+                    <a class="discover-card__link" href="https://en.wikipedia.org/wiki/Hussain_Sagar" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </article>
+
+                <article class="discover-card">
+                    <h3>T-Hub</h3>
+
+                    <figure>
+                        <img src="images/t-hub.webp" alt="The modern T-Hub innovation centre in Hyderabad" width="500" height="300" loading="lazy">
+                    </figure>
+
+                    <address>
+                        Raidurg, Hyderabad
+                    </address>
+
+                    <p>
+                        T-Hub supports entrepreneurs and startups through mentoring,
+                        investment connections, innovation programmes, and partnerships.
+                    </p>
+
+                    <a class="discover-card__link" href="https://t-hub.co/" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </article>
+
+                <article class="discover-card">
+                    <h3>Ramoji Film City</h3>
+
+                    <figure>
+                        <img src="images/ramoji-film-city.webp" alt="Film sets and landscaped gardens at Ramoji Film City" width="500" height="300" loading="lazy">
+                    </figure>
+
+                    <address>
+                        Anaspur Village, Hyderabad
+                    </address>
+
+                    <p>
+                        One of the world's largest film studio complexes,
+                        offering tourism, entertainment, events, production, and hospitality.
+                    </p>
+
+                    <a class="discover-card__link" href="https://www.ramojifilmcity.com/" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </article>
+
+                <article class="discover-card">
+                    <h3>Salar Jung Museum</h3>
+
+                    <figure>
+                        <img src="images/salar-jung-museum.webp" alt="Exterior of the Salar Jung Museum in Hyderabad" width="500" height="300" loading="lazy">
+                    </figure>
+
+                    <address>
+                        DarulShifa, Hyderabad, India
+                    </address>
+
+                    <p>
+                        The museum contains art, sculptures, manuscripts,
+                        furniture, textiles, and historical objects from around the world.
+                    </p>
+
+                    <a class="discover-card__link" href="https://www.salarjungmuseum.in/" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </article>
+
+                <article class="discover-card">
+                    <h3>Laad Bazaar</h3>
+
+                    <figure>
+                        <img src="images/laad-bazaar.webp" alt="Colourful bangles and shops in Laad Bazaar Hyderabad" width="500" height="300" loading="lazy">
+                    </figure>
+
+                    <address>
+                        Near Charminar, Old City, Hyderabad
+                    </address>
+
+                    <p>
+                        Laad Bazaar is famous for bangles, jewellery, textiles,
+                        traditional crafts, local businesses, and the city's market culture.
+                    </p>
+
+                    <a class="discover-card__link" href="https://en.wikipedia.org/wiki/Laad_Bazaar" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </article>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <section>
+                <h2>Contact Information</h2>
+                <address>
+
+                    Hyderabad Chamber of Commerce
+
+                    14 Tank Bund Road
+
+                    Hyderabad, Telangana 500080
+                    <a href="tel:+914023450001" aria-label="Call Hyderabad Chamber of Commerce">
+                        (040) 2345-0001
+                    </a>
+                    <a href="mailto:info@hyderabadchamber.example" aria-label="Email Hyderabad Chamber of Commerce">
+                    info@hyderabadchamber.example
+                    </a>
+                </address>
+            </section>
+            <section class="site-footer__social">
+                <h2>Follow Us</h2>
+
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/john-sathya-arava-4390892a7/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                            <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/john.s.arava" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook profile">
+                            <img src="images/facebook.svg" alt="Facebook" width="40" height="40">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/silentmomentum1530/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram profile">
+                            <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Site Information</h2>
+                <p class="site-footer__meta">
+
+                    ©
+                    <span id="current-year"></span>
+
+                    Hyderabad Chamber of Commerce
+
+                    John Sathya Arava • WDD 231
+
+                    Last Modified:
+
+                    <span id="last-modified"></span>
+                </p>
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -95,3 +95,64 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* =========================================================
+   JOIN PAGE
+========================================================= */
+
+@media (min-width:900px){
+
+    .join-layout{
+        grid-template-columns:2fr 1fr;
+        align-items:start;
+        gap:2rem;
+    }
+
+    .join-form{
+        grid-template-columns:1fr 1fr;
+        gap:1.2rem;
+    }
+
+    .join-form textarea,
+    .join-form button,
+    .join-form input[type="hidden"]{
+        grid-column:1 / -1;
+    }
+
+    .membership-cards{
+        position:sticky;
+        top:6rem;
+    }
+
+}
+
+/* =========================================================
+   DISCOVER PAGE
+========================================================= */
+
+@media (min-width:640px){
+
+  .discover-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}
+
+@media (min-width:900px){
+
+  .discover-layout{
+    grid-template-columns:280px 1fr;
+    align-items:start;
+    gap:2rem;
+  }
+
+  .visit-message{
+    position:sticky;
+    top:6rem;
+  }
+
+  .discover-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}

@@ -753,3 +753,259 @@ main > h1 {
     animation: none;
   }
 }
+
+/* =========================================================
+   JOIN PAGE
+========================================================= */
+
+.join-layout{
+    display:grid;
+    gap:2rem;
+}
+
+.join-form-section,
+.membership-section{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:1.5rem;
+}
+
+.join-intro{
+    margin-bottom:1.5rem;
+    color:var(--text-light);
+}
+
+.join-form{
+    display:grid;
+    gap:1rem;
+}
+
+.join-form label{
+    display:flex;
+    flex-direction:column;
+    gap:.45rem;
+    font-weight:600;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea{
+    width:100%;
+    padding:.75rem;
+    border:1px solid var(--border);
+    border-radius:8px;
+    background:var(--surface);
+    color:var(--text);
+}
+
+.join-form textarea{
+    resize:vertical;
+    min-height:140px;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus{
+    outline:none;
+    border-color:var(--accent);
+    box-shadow:0 0 0 3px rgb(30 58 138 / 15%);
+}
+
+.form-help{
+    font-size:.8rem;
+    color:var(--text-light);
+}
+
+.membership-section h2{
+    margin-bottom:1rem;
+}
+
+.membership-cards{
+    display:grid;
+    gap:1rem;
+}
+
+.membership-card{
+    display:flex;
+    flex-direction:column;
+    gap:.75rem;
+    padding:1.25rem;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:var(--background);
+    transition:.25s;
+}
+
+.membership-card:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--shadow);
+}
+
+.membership-card--featured{
+    border:2px solid var(--gold);
+}
+
+.membership-card__label{
+    align-self:flex-start;
+    padding:.3rem .8rem;
+    border-radius:999px;
+    background:var(--gold);
+    color:var(--primary);
+    font-size:.75rem;
+    font-weight:700;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+}
+
+.membership-details{
+    align-self:flex-start;
+    padding:.7rem 1rem;
+    border-radius:8px;
+    background:var(--accent);
+    color:var(--surface);
+    font-weight:600;
+}
+
+.membership-details:hover{
+    background:var(--primary);
+}
+
+/* ---------- Dialog ---------- */
+
+.membership-modal{
+    width:min(90%,520px);
+    border:none;
+    border-radius:var(--radius);
+    padding:0;
+    box-shadow:0 20px 40px rgb(0 0 0 / 25%);
+}
+
+.membership-modal::backdrop{
+    background:rgb(0 0 0 / 45%);
+}
+
+.membership-modal__content{
+    padding:2rem;
+}
+
+.membership-modal h2{
+    margin-bottom:1rem;
+}
+
+.membership-modal ul{
+    margin-top:1rem;
+    padding-left:1.2rem;
+    list-style:disc;
+}
+
+.membership-modal li{
+    margin-bottom:.5rem;
+}
+
+.modal-close{
+    float:right;
+    font-size:1.4rem;
+    background:none;
+    color:var(--text);
+}
+
+/* =========================================================
+   DISCOVER PAGE
+========================================================= */
+
+.discover-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+.visit-message {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.visit-message h2 {
+  margin-bottom: .75rem;
+}
+
+#visit-message {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.discover-section h2 {
+  margin-bottom: 1rem;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.discover-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.discover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 12%);
+}
+
+.discover-card figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.discover-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.discover-card address {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.discover-card p {
+  color: var(--text-light);
+}
+
+.discover-card__link {
+  display: inline-block;
+  margin-top: .5rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.discover-card__link:hover {
+  text-decoration: underline;
+}
+
+/* Desktop image hover only */
+
+@media (hover:hover) {
+
+  .discover-card img {
+    transition: transform .35s ease;
+  }
+
+  .discover-card:hover img {
+    transform: scale(1.05);
+  }
+
+}
+

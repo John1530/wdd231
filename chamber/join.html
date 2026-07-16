@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join the Hyderabad Chamber of Commerce</title>
+
+    <meta name="description" content="Join the Hyderabad Chamber of Commerce and connect with businesses, entrepreneurs, community leaders, networking events, and growth opportunities.">
+    <meta name="author" content="John Sathya Arava">
+
+    <meta property="og:title" content="Join the Hyderabad Chamber of Commerce">
+    <meta property="og:description" content="Join the Hyderabad Chamber of Commerce and connect with businesses, entrepreneurs, community leaders, networking events, and growth opportunities.">
+    <meta property="og:image" content="https://john1530.github.io/wdd231/chamber/images/social-share.png">
+    <meta property="og:url" content="https://john1530.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link href="images/favicon.svg" rel="icon" type="image/svg+xml">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <script defer="" src="scripts/common.js"></script>
+    <script defer="" src="scripts/index.js"></script>
+</head>
+<body>
+
+     <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="Hyderabad Chamber of Commerce home">
+                <span class="brand__mark" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" width="42" height="42" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="10" fill="#1B1D1F"></rect>
+                        <path d="M16 48V28A16 16 0 0 1 48 28V48" fill="none" stroke="#C89B3C" stroke-width="4"></path>
+                        <circle cx="32" cy="20" r="3" fill="#C89B3C"></circle>
+                    </svg>
+                </span>
+
+                <span class="brand__text">
+                    <span class="brand__name">Hyderabad Chamber</span>
+                    <span class="brand__tag">of Commerce</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="join.html" aria-current="page">Join</a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Intro Banner -->
+    <div class="page-banner">
+        <div class="page-banner__inner">
+            <p>
+                Become part of Hyderabad's growing network of businesses,
+                entrepreneurs, professionals, and community leaders.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+        <h1>Join the Hyderabad Chamber</h1>
+
+        <div class="join-layout">
+        
+            <section class="join-form-section" aria-labelledby="application-heading">
+                <h2 id="application-heading">Membership Application</h2>
+
+                <p class="join-intro">
+                    Complete the form below to begin your Chamber membership application.
+                 </p>
+
+                <form class="join-form" method="get" action="thankyou.html">
+                    <label for="first-name">
+                        First Name
+                        <input type="text" id="first-name" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label for="last-name">
+                        Last Name
+                        <input type="text" id="last-name" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label for="organization-title">
+                        Organizational Title
+                        <input type="text" id="organization-title" name="organizationTitle" title="Enter your title within the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                        <span class="form-help">
+                            Use at least seven letters, spaces, or hyphens.
+                        </span>
+                    </label>
+
+                    <label for="email">
+                        Email Address
+                        <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="name@example.com" required>
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                    </label>
+
+                    <label for="organization">
+                        Business or Organization Name
+                        <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label for="membership-level">
+                        Membership Level
+                        <select id="membership-level" name="membershipLevel" title="Select a membership level" required>
+                            <option value="" disabled selected>
+                                Select a membership level
+                            </option>
+                            <option value="np">
+                                Nonprofit Membership
+                            </option>
+                            <option value="bronze">
+                                Bronze Membership
+                            </option>
+                            <option value="silver">
+                                Silver Membership
+                            </option>
+                            <option value="gold">
+                                Gold Membership
+                            </option>
+                        </select>
+                    </label>
+
+                    <label for="description">
+                        Business or Organization Description
+                        <textarea id="description" name="description" title="Describe your business or organization" rows="6" placeholder="Tell us about your organization, services, and goals."></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button class="button button--primary" type="submit">
+                        Submit Application
+                    </button>
+                </form>
+            </section>
+
+            <section class="membership-section" aria-labelledby="membership-heading">
+                <h2 id="membership-heading">Membership Levels</h2>
+                <div class="membership-cards">
+                    <article class="membership-card">
+                        <span class="membership-card__label">Community</span>
+                        <h3>Nonprofit Membership</h3>
+                        <p>Designed for registered nonprofit and community organizations.</p>
+                        <button class="membership-details" type="button" data-modal="np-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <span class="membership-card__label">Starter</span>
+                        <h3>Bronze Membership</h3>
+                        <p>A practical starting point for small businesses and entrepreneurs.</p>
+                        <button class="membership-details" type="button" data-modal="bronze-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card">
+                        <span class="membership-card__label">Growth</span>
+                        <h3>Silver Membership</h3>
+                        <p>Expanded promotional opportunities for growing organizations.</p>
+                        <button class="membership-details" type="button" data-modal="silver-modal">
+                            View Benefits
+                        </button>
+                    </article>
+
+                    <article class="membership-card membership-card--featured">
+                        <span class="membership-card__label">Premium</span>
+                        <h3>Gold Membership</h3>
+                        <p>Maximum visibility, premium benefits, and leadership opportunities.</p>
+                        <button class="membership-details" type="button" data-modal="gold-modal">
+                            View Benefits
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <dialog class="membership-modal" id="np-modal">
+        <div class="membership-modal__content">
+            <button class="modal-close" type="button" aria-label="Close nonprofit membership details">
+                ×
+            </button>
+
+            <h2>Nonprofit Membership</h2>
+
+            <p>Available to qualifying nonprofit and community organizations.</p>
+
+            <ul>
+                <li>Business directory listing</li>
+                <li>Access to networking events</li>
+                <li>Community partnership opportunities</li>
+                <li>Discounted event registration</li>
+                <li>No annual membership fee</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="membership-modal" id="bronze-modal">
+        <div class="membership-modal__content">
+            <button class="modal-close" type="button" aria-label="Close Bronze membership details">
+                ×       
+            </button>
+
+            <h2>Bronze Membership</h2>
+
+            <p>Suitable for startups, freelancers, and small local businesses.</p>
+
+            <ul>
+                <li>Business directory listing</li>
+                <li>Networking event access</li>
+                <li>Member training workshops</li>
+                <li>Chamber newsletter inclusion</li>
+                <li>Basic promotional opportunities</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="membership-modal" id="silver-modal">
+        <div class="membership-modal__content">
+            <button class="modal-close" type="button" aria-label="Close Silver membership details">
+                ×
+            </button>
+
+            <h2>Silver Membership</h2>
+
+            <p>Built for businesses seeking stronger visibility and engagement.</p>
+
+            <ul>
+                <li>All Bronze membership benefits</li>
+                <li>Homepage spotlight eligibility</li>
+                <li>Priority event registration</li>
+                <li>Social media promotion</li>
+                <li>Discounted sponsorship opportunities</li>
+            </ul>
+        </div>
+    </dialog>
+
+    <dialog class="membership-modal" id="gold-modal">
+        <div class="membership-modal__content">
+            <button class="modal-close" type="button" aria-label="Close Gold membership details">
+                ×
+            </button>
+
+            <h2>Gold Membership</h2>
+
+            <p>Premium membership for established and high-growth organizations.</p>
+
+            <ul>
+                <li>All Silver membership benefits</li>
+                <li>Featured directory placement</li>
+                <li>Premium homepage spotlight eligibility</li>
+                <li>Leadership and advisory opportunities</li>
+                <li>Priority sponsorship and event promotion</li>
+            </ul>
+        </div>
+    </dialog>
+    
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <section>
+                <h2>Contact Information</h2>
+                <address>
+
+                    Hyderabad Chamber of Commerce
+
+                    14 Tank Bund Road
+
+                    Hyderabad, Telangana 500080
+                    <a href="tel:+914023450001" aria-label="Call Hyderabad Chamber of Commerce">
+                        (040) 2345-0001
+                    </a>
+                    <a href="mailto:info@hyderabadchamber.example" aria-label="Email Hyderabad Chamber of Commerce">
+                    info@hyderabadchamber.example
+                    </a>
+                </address>
+            </section>
+            <section class="site-footer__social">
+                <h2>Follow Us</h2>
+
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/john-sathya-arava-4390892a7/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                            <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/john.s.arava" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook profile">
+                            <img src="images/facebook.svg" alt="Facebook" width="40" height="40">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/silentmomentum1530/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram profile">
+                            <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Site Information</h2>
+                <p class="site-footer__meta">
+
+                    ©
+                    <span id="current-year"></span>
+
+                    Hyderabad Chamber of Commerce
+
+                    John Sathya Arava • WDD 231
+
+                    Last Modified:
+
+                    <span id="last-modified"></span>
+                </p>
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>
