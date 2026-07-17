@@ -37,21 +37,24 @@
   }
 
   .directory-controls {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
   .directory-controls__count {
+    margin-right: auto;
     text-align: left;
   }
 
   .view-toggle {
-    width: auto;
+    width: 170px;
+    margin-left: auto;
   }
 
   .view-toggle button {
-    flex: initial;
+    flex: 1;
   }
 
   #member-list {

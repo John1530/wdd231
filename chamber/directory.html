@@ -80,24 +80,31 @@
   </div>
   <!-- Main -->
   <main>
-    <div class="directory-controls">
+    <div class="directory-heading">
       <h1 id="page-title">Member Directory</h1>
+
       <p>
         Connect with businesses, organizations, and community leaders
         across the Hyderabad region.
       </p>
+    </div>
+
+    <div class="directory-controls">
       <p aria-live="polite" class="directory-controls__count" id="member-count">
         Loading members...
       </p>
+
       <div aria-label="Choose directory view" class="view-toggle" role="group">
         <button aria-pressed="true" id="view-grid" type="button">
           Grid
         </button>
+
         <button aria-pressed="false" id="view-list" type="button">
           List
         </button>
       </div>
     </div>
+
     <ul aria-live="polite" class="view-grid" id="member-list">
       <li class="loading">
         Loading member directory...
