@@ -31,13 +31,31 @@
     border-bottom-color: var(--gold);
   }
 
-  main > h1 {
+  main > h1,
+  .directory-heading h1 {
     font-size: 2.4rem;
+  }
+
+  .directory-controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .directory-controls__count {
+    text-align: left;
+  }
+
+  .view-toggle {
+    width: auto;
+  }
+
+  .view-toggle button {
+    flex: initial;
   }
 
   #member-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    min-height: 650px;
   }
 
   #member-list.view-list {
@@ -78,7 +96,6 @@
 
   #member-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    min-height: 500px;
   }
 
   .home-hero,

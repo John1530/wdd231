@@ -277,13 +277,28 @@ main > h1 {
   font-size: 2rem;
 }
 
+.directory-heading {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.directory-heading h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.directory-heading p {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
 /* Directory controls */
 
 .directory-controls {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
   gap: 0.75rem;
   margin-bottom: 1.25rem;
 }
@@ -292,10 +307,12 @@ main > h1 {
   color: var(--text-light);
   font-family: var(--font-mono);
   font-size: 0.84rem;
+  text-align: center;
 }
 
 .view-toggle {
-  display: inline-flex;
+  display: flex;
+  width: 100%;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -303,6 +320,7 @@ main > h1 {
 }
 
 .view-toggle button {
+  flex: 1;
   min-width: 74px;
   padding: 0.55rem 0.9rem;
   background: transparent;
@@ -326,7 +344,6 @@ main > h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  min-height: 900px;
 }
 
 .member-card {
@@ -1021,4 +1038,3 @@ main > h1 {
   }
 
 }
-
