@@ -62,6 +62,45 @@
     grid-template-columns: 1fr;
   }
 
+  /* Compact three-column directory list */
+  #member-list.view-list .member-card__body {
+    grid-template-columns: 78px minmax(0, 1fr) auto;
+    grid-template-areas:
+      "badge name link"
+      "badge tagline link"
+      "badge meta link";
+    column-gap: 1.2rem;
+    row-gap: 0.2rem;
+    align-items: center;
+    padding: 1rem 1.25rem;
+  }
+
+  #member-list.view-list .badge {
+    grid-area: badge;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #member-list.view-list .member-card__name {
+    grid-area: name;
+  }
+
+  #member-list.view-list .member-card__tagline {
+    grid-area: tagline;
+  }
+
+  #member-list.view-list .member-card__meta {
+    grid-area: meta;
+  }
+
+  #member-list.view-list .member-card__link {
+    grid-area: link;
+    justify-self: end;
+    align-self: center;
+    margin: 0;
+    padding-left: 1rem;
+  }
+
   .home-actions__grid,
   .events-grid,
   .forecast-grid {

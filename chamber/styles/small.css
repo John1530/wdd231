@@ -441,9 +441,21 @@ main > h1 {
 
 /* List view */
 
+#member-list.view-list {
+  gap: 0.8rem;
+}
+
 #member-list.view-list .member-card {
-  flex-direction: row;
-  align-items: center;
+  display: block;
+  overflow: visible;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 7%);
+  transform: none;
+}
+
+#member-list.view-list .member-card:hover {
+  transform: none;
+  box-shadow: 0 5px 14px rgb(0 0 0 / 9%);
 }
 
 #member-list.view-list .member-card__image-wrap {
@@ -451,14 +463,43 @@ main > h1 {
 }
 
 #member-list.view-list .member-card__body {
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.3rem;
   width: 100%;
-  padding: 1rem 1.1rem;
+  padding: 0.9rem 1rem;
   text-align: left;
 }
 
 #member-list.view-list .badge {
-  align-self: flex-start;
+  justify-self: start;
+  align-self: start;
+  min-width: 66px;
+  padding: 0.22rem 0.55rem;
+  text-align: center;
+}
+
+#member-list.view-list .member-card__name {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+#member-list.view-list .member-card__tagline {
+  margin: 0;
+  font-size: 0.84rem;
+}
+
+#member-list.view-list .member-card__meta {
+  margin: 0.1rem 0 0;
+  font-size: 0.73rem;
+  line-height: 1.55;
+}
+
+#member-list.view-list .member-card__link {
+  justify-self: start;
+  margin-top: 0.25rem;
+  font-size: 0.86rem;
+  white-space: nowrap;
 }
 
 .loading {
@@ -1038,3 +1079,4 @@ main > h1 {
   }
 
 }
+
