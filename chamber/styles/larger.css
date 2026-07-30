@@ -200,7 +200,7 @@
 @media (min-width:900px){
 
   .discover-layout{
-    grid-template-columns:280px 1fr;
+    grid-template-columns:minmax(220px,260px) minmax(0,1fr);
     align-items:start;
     gap:2rem;
   }
@@ -214,4 +214,44 @@
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
 
+}
+/* =========================================================
+   DISCOVER PAGE — POLISHED RESPONSIVE GRID
+========================================================= */
+
+@media (min-width: 640px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .visit-message {
+    grid-template-columns: auto auto 1fr;
+  }
+
+  .visit-message::before {
+    grid-row: auto;
+  }
+
+  .visit-message h2 {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 980px) {
+  .discover-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .visit-message {
+    position: static;
+    max-width: 900px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .discover-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.6rem;
+  }
 }
