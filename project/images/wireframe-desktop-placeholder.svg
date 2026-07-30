@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Desktop wireframe placeholder</title>
+  <desc id="desc">A blank replacement notice for the student's original hand-drawn desktop wireframe.</desc>
+  <rect width="900" height="600" fill="#fff"/>
+  <rect x="25" y="25" width="850" height="550" fill="none" stroke="#000" stroke-width="3" stroke-dasharray="12 9"/>
+  <text x="450" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700">ADD YOUR ORIGINAL DESKTOP WIREFRAME</text>
+  <text x="450" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">Replace this SVG before submission</text>
+</svg>
