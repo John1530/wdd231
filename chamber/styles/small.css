@@ -1008,8 +1008,112 @@ main > h1 {
     color:var(--text);
 }
 
-/* The original Discover styles were removed to avoid duplicate declarations.
-   The polished Discover section near the end of this file is the active version. */
+/* =========================================================
+   DISCOVER PAGE
+========================================================= */
+
+.discover-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+.visit-message {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.visit-message h2 {
+  margin-bottom: .75rem;
+}
+
+#visit-message {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.discover-section {
+  min-width: 0;
+}
+
+.discover-section h2 {
+  margin-bottom: 1.25rem;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.discover-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.discover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 12%);
+}
+
+.discover-card figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.discover-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.discover-card address {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.discover-card p {
+  color: var(--text-light);
+}
+
+.discover-card__link {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.discover-card__link:hover {
+  text-decoration: underline;
+}
+
+/* Desktop image hover only */
+
+@media (hover:hover) {
+
+  .discover-card img {
+    transition: transform .35s ease;
+  }
+
+  .discover-card:hover img {
+    transform: scale(1.05);
+  }
+
+}
+
 
 /* =========================================================
    JOIN / THANK-YOU ENHANCEMENTS
