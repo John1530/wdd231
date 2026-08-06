@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroVision | Aerospace Learning Hub</title>
+  <meta name="description" content="Explore aerospace fundamentals, aircraft technologies, and learning pathways through clear explanations and interactive tools.">
+  <meta name="author" content="John Sathya Arava">
+  <meta property="og:title" content="AeroVision – Aerospace Learning Hub">
+  <meta property="og:description" content="Explore aerospace fundamentals, aircraft technologies, and learning pathways through clear explanations and interactive tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/social-share.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/aerovision.css">
+  <script type="module" src="scripts/main.js"></script>
+  
+</head>
+<body>
+  <header class="site-header">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="AeroVision home">
+        <span class="brand-mark" aria-hidden="true">JSA</span>
+        <span><strong>AeroVision</strong><small>Aerospace Learning Hub</small></span>
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="concepts.html">Flight Concepts</a><a href="aircraft.html">Aircraft Explorer</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">Explore • Understand • Apply</p><h1>See aerospace differently.</h1><p>Learn the science of flight through concise explanations, visual examples, and an interactive aircraft explorer built for curious students.</p><div class="button-row"><a class="button primary" href="concepts.html">Learn flight basics</a><a class="button secondary" href="aircraft.html">Explore aircraft</a></div></div>
+  <img src="images/hero-aircraft.svg" alt="Stylized aircraft flying above curved airflow lines" width="640" height="480">
+</section>
+<section class="section intro"><div><p class="eyebrow">Why AeroVision?</p><h2>A focused path into aerospace</h2></div><p>Aerospace can feel complex because many disciplines meet at once. AeroVision organizes essential ideas into approachable topics, then connects them to real aircraft and career pathways.</p></section>
+<section class="feature-grid" aria-label="AeroVision features">
+  <article><span class="feature-number">01</span><h2>Understand forces</h2><p>Learn how lift, weight, thrust, and drag interact during different phases of flight.</p><a href="concepts.html#forces">Study the four forces</a></article>
+  <article><span class="feature-number">02</span><h2>Explore aircraft</h2><p>Compare aircraft by category, role, speed, range, manufacturer, and propulsion.</p><a href="aircraft.html">Open the explorer</a></article>
+  <article><span class="feature-number">03</span><h2>Plan your learning</h2><p>Choose a focus area and receive a personalized starting recommendation.</p><a href="#learning-plan">Create a learning plan</a></article>
+</section>
+<section class="section split-panel"><img src="images/aerospace-path.svg" alt="Diagram connecting aerodynamics, propulsion, structures, controls, and space systems" width="560" height="420" loading="lazy"><div><p class="eyebrow">Connected disciplines</p><h2>One field, many pathways</h2><p>Aerospace engineers combine physics, mathematics, computing, materials, design, and testing. Start with one topic, then follow its connections.</p><ul class="check-list"><li>Aerodynamics and computational fluid dynamics</li><li>Propulsion and thermal sciences</li><li>Flight mechanics, control, and autonomy</li><li>Structures, materials, and manufacturing</li></ul></div></section>
+<section id="learning-plan" class="section form-section"><div><p class="eyebrow">Your next step</p><h2>Build a learning plan</h2><p>Tell us what interests you. Your selections will be displayed on the confirmation page.</p></div>
+<form method="get" action="plan.html">
+<label>Full name<input type="text" name="name" autocomplete="name" required></label>
+<label>Email address<input type="email" name="email" autocomplete="email" required></label>
+<label>Primary interest<select name="interest" required><option value="" selected disabled>Select an area</option><option>Aerodynamics</option><option>Propulsion</option><option>Aircraft Design</option><option>Space Systems</option><option>Flight Control and AI</option></select></label>
+<label>Current experience<select name="experience" required><option value="" selected disabled>Select your level</option><option>Beginner</option><option>Engineering student</option><option>Graduate student</option><option>Working professional</option></select></label>
+<label class="full">Learning goal<textarea name="goal" rows="4" required placeholder="What would you like to understand or build?"></textarea></label>
+<input type="hidden" name="submitted" id="submitted-at"><button class="button primary" type="submit">Create my plan</button>
+</form></section></main>
+  <footer class="site-footer">
+    <div><strong>AeroVision</strong><p>Making aerospace concepts clear and approachable.</p></div>
+    <div class="footer-links"><a href="attributions.html">Attributions</a><a href="VIDEO-LINK-HERE" aria-label="Project demonstration video placeholder">Project Video</a></div>
+    <p>&copy; <span id="current-year"></span> John Sathya Arava | India<br><span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

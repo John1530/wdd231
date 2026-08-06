@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Concepts | AeroVision</title>
+  <meta name="description" content="Learn the four forces of flight, lift fundamentals, airflow, angle of attack, stability, and aircraft control.">
+  <meta name="author" content="John Sathya Arava">
+  <meta property="og:title" content="Flight Concepts | AeroVision">
+  <meta property="og:description" content="Learn the four forces of flight, lift fundamentals, airflow, angle of attack, stability, and aircraft control.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/social-share.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/aerovision.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/calculator.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="AeroVision home">
+        <span class="brand-mark" aria-hidden="true">JSA</span>
+        <span><strong>AeroVision</strong><small>Aerospace Learning Hub</small></span>
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="concepts.html">Flight Concepts</a><a href="aircraft.html">Aircraft Explorer</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+<section class="page-hero"><p class="eyebrow">Flight Concepts</p><h1>How aircraft fly</h1><p>Start with the forces, then connect pressure, airflow, stability, and propulsion into one flight system.</p></section>
+<section id="forces" class="section"><div class="section-heading"><p class="eyebrow">Foundation</p><h2>The four forces of flight</h2><p>Flight depends on the balance and direction of four primary forces.</p></div><div class="concept-grid">
+<article><span class="concept-icon">↑</span><h3>Lift</h3><p>An aerodynamic force acting mainly perpendicular to the relative airflow. Wings generate lift by changing pressure and momentum around them.</p></article>
+<article><span class="concept-icon">↓</span><h3>Weight</h3><p>The gravitational force acting through an aircraft's center of gravity. It depends on mass and local gravitational acceleration.</p></article>
+<article><span class="concept-icon">→</span><h3>Thrust</h3><p>The propulsive force produced by propellers, jet engines, or rockets to move the vehicle forward.</p></article>
+<article><span class="concept-icon">←</span><h3>Drag</h3><p>A force opposing motion through the air. It includes skin-friction, pressure, induced, and wave drag.</p></article></div></section>
+<section class="section equation-panel"><div><p class="eyebrow">Interactive calculator</p><h2>Estimate lift</h2><p>The calculator uses the standard lift equation. Enter representative values to see how density, speed, wing area, and lift coefficient affect lift.</p><p class="equation">L = ½ρV²SC<sub>L</sub></p></div><form id="lift-form" class="calculator-form"><label>Air density, ρ (kg/m³)<input id="density" type="number" min="0.1" step="0.001" value="1.225" required></label><label>Velocity, V (m/s)<input id="velocity" type="number" min="0" step="0.1" value="70" required></label><label>Wing area, S (m²)<input id="area" type="number" min="0.1" step="0.1" value="30" required></label><label>Lift coefficient, C<sub>L</sub><input id="coefficient" type="number" min="0" step="0.01" value="0.8" required></label><button class="button primary" type="submit">Calculate lift</button><output id="lift-result" aria-live="polite">Lift: 72,030 N</output></form></section>
+<section class="section split-panel reverse"><img src="images/airflow.svg" alt="Simplified airflow streamlines around an airfoil" width="560" height="420" loading="lazy"><div><p class="eyebrow">Airflow</p><h2>Pressure and momentum work together</h2><p>An airfoil shapes the surrounding flow. Pressure differences act over the wing surface, while the wing also redirects air downward. Both descriptions are consistent parts of the same aerodynamic process.</p><h3>Angle of attack</h3><p>Increasing angle of attack usually increases lift coefficient until flow separation becomes severe. Beyond the critical angle, the wing stalls and lift decreases.</p></div></section>
+<section class="section"><div class="section-heading"><p class="eyebrow">Control and stability</p><h2>Three axes of rotation</h2></div><div class="axis-grid"><article><h3>Roll</h3><p>Rotation around the longitudinal axis, controlled mainly by ailerons.</p></article><article><h3>Pitch</h3><p>Rotation around the lateral axis, controlled mainly by the elevator or stabilator.</p></article><article><h3>Yaw</h3><p>Rotation around the vertical axis, controlled mainly by the rudder.</p></article></div></section></main>
+  <footer class="site-footer">
+    <div><strong>AeroVision</strong><p>Making aerospace concepts clear and approachable.</p></div>
+    <div class="footer-links"><a href="attributions.html">Attributions</a><a href="VIDEO-LINK-HERE" aria-label="Project demonstration video placeholder">Project Video</a></div>
+    <p>&copy; <span id="current-year"></span> John Sathya Arava | India<br><span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

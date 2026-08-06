@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Plan Confirmation | AeroVision</title>
+  <meta name="description" content="View the learning-plan information submitted through the AeroVision form.">
+  <meta name="author" content="John Sathya Arava">
+  <meta property="og:title" content="Learning Plan Confirmation | AeroVision">
+  <meta property="og:description" content="View the learning-plan information submitted through the AeroVision form.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/social-share.svg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/aerovision.css">
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/plan.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="AeroVision home">
+        <span class="brand-mark" aria-hidden="true">JSA</span>
+        <span><strong>AeroVision</strong><small>Aerospace Learning Hub</small></span>
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="concepts.html">Flight Concepts</a><a href="aircraft.html">Aircraft Explorer</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content"><section class="page-hero compact"><p class="eyebrow">Learning Plan</p><h1>Submission received</h1><p>Your form details are shown below.</p></section><section class="section confirmation-card"><h2>Your AeroVision learning plan</h2><dl id="form-details"></dl><div id="recommendation" class="recommendation"></div><a class="button primary" href="index.html">Return home</a></section></main>
+  <footer class="site-footer">
+    <div><strong>AeroVision</strong><p>Making aerospace concepts clear and approachable.</p></div>
+    <div class="footer-links"><a href="attributions.html">Attributions</a><a href="VIDEO-LINK-HERE" aria-label="Project demonstration video placeholder">Project Video</a></div>
+    <p>&copy; <span id="current-year"></span> John Sathya Arava | India<br><span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

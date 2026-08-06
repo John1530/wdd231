@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720" role="img" aria-labelledby="title desc">
+  <title id="title">AeroVision desktop home page wireframe</title>
+  <desc id="desc">A black-and-white wide viewport layout sketch.</desc>
+  <rect width="1000" height="720" fill="white"/>
+  <g fill="none" stroke="black" stroke-width="2">
+    <rect x="10" y="10" width="980" height="64"/>
+    <rect x="28" y="22" width="55" height="40"/>
+    <rect x="640" y="28" width="325" height="28"/>
+    <path d="M721 28v28M802 28v28M883 28v28"/>
+    <rect x="10" y="86" width="980" height="180"/>
+    <rect x="405" y="215" width="190" height="30"/>
+    <rect x="10" y="278" width="980" height="78"/>
+    <rect x="10" y="368" width="310" height="120"/>
+    <rect x="345" y="368" width="310" height="120"/>
+    <rect x="680" y="368" width="310" height="120"/>
+    <rect x="10" y="500" width="480" height="112"/>
+    <rect x="510" y="500" width="480" height="112"/>
+    <rect x="10" y="624" width="980" height="48"/>
+    <rect x="10" y="684" width="980" height="26"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="15" fill="black" text-anchor="middle">
+    <text x="55" y="48">LOGO</text>
+    <text x="240" y="49">AEROVISION</text>
+    <text x="680" y="47">HOME</text>
+    <text x="761" y="47">FORCES</text>
+    <text x="842" y="47">AIRCRAFT</text>
+    <text x="924" y="47">CAREERS</text>
+    <text x="500" y="132">WIDE HERO IMAGE</text>
+    <text x="500" y="168">HEADLINE + INTRODUCTION</text>
+    <text x="500" y="235">EXPLORE BUTTON</text>
+    <text x="500" y="325">ABOUT AEROVISION</text>
+    <text x="165" y="432">TOPIC CARD 1</text>
+    <text x="500" y="432">TOPIC CARD 2</text>
+    <text x="835" y="432">TOPIC CARD 3</text>
+    <text x="250" y="559">LIFT CALCULATOR</text>
+    <text x="750" y="559">AEROSPACE CAREERS</text>
+    <text x="500" y="654">CALL TO ACTION</text>
+    <text x="500" y="703">FOOTER</text>
+  </g>
+</svg>
